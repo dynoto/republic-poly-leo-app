@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54F6B0DA13A8E96C001F9F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0D913A8E96C001F9F0B /* UIKit.framework */; };
+		54F6B0DC13A8E96C001F9F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DB13A8E96C001F9F0B /* Foundation.framework */; };
+		54F6B0DE13A8E96C001F9F0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */; };
+		54F6B0E413A8E96C001F9F0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0E213A8E96C001F9F0B /* InfoPlist.strings */; };
+		54F6B0E713A8E96C001F9F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0E613A8E96C001F9F0B /* main.m */; };
+		54F6B0EA13A8E96D001F9F0B /* LeoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */; };
+		54F6B0ED13A8E96D001F9F0B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0EB13A8E96D001F9F0B /* MainWindow.xib */; };
+		54F6B0F013A8E96D001F9F0B /* LeoAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */; };
+		54F6B0F313A8E96D001F9F0B /* LeoAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */; };
+		54F6B0FA13A8E96D001F9F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0D913A8E96C001F9F0B /* UIKit.framework */; };
+		54F6B0FB13A8E96D001F9F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DB13A8E96C001F9F0B /* Foundation.framework */; };
+		54F6B0FC13A8E96D001F9F0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */; };
+		54F6B10413A8E96D001F9F0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B10213A8E96D001F9F0B /* InfoPlist.strings */; };
+		54F6B10713A8E96D001F9F0B /* LeoAppTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B10613A8E96D001F9F0B /* LeoAppTests.h */; };
+		54F6B10913A8E96D001F9F0B /* LeoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B10813A8E96D001F9F0B /* LeoAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54F6B0FD13A8E96D001F9F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F6B0CC13A8E96C001F9F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F6B0D413A8E96C001F9F0B;
+			remoteInfo = LeoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54F6B0D513A8E96C001F9F0B /* LeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F6B0D913A8E96C001F9F0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54F6B0DB13A8E96C001F9F0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		54F6B0E113A8E96C001F9F0B /* LeoApp-Info.plist */ = {isa = PBXFileReference; path = "LeoApp-Info.plist"; sourceTree = "<group>"; };
+		54F6B0E313A8E96C001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F6B0E513A8E96C001F9F0B /* LeoApp-Prefix.pch */ = {isa = PBXFileReference; path = "LeoApp-Prefix.pch"; sourceTree = "<group>"; };
+		54F6B0E613A8E96C001F9F0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54F6B0E813A8E96D001F9F0B /* LeoAppAppDelegate.h */ = {isa = PBXFileReference; path = LeoAppAppDelegate.h; sourceTree = "<group>"; };
+		54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoAppAppDelegate.m; sourceTree = "<group>"; };
+		54F6B0EC13A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		54F6B0EE13A8E96D001F9F0B /* LeoAppViewController.h */ = {isa = PBXFileReference; path = LeoAppViewController.h; sourceTree = "<group>"; };
+		54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoAppViewController.m; sourceTree = "<group>"; };
+		54F6B0F213A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeoAppViewController.xib; sourceTree = "<group>"; };
+		54F6B0F913A8E96D001F9F0B /* LeoAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54F6B10113A8E96D001F9F0B /* LeoAppTests-Info.plist */ = {isa = PBXFileReference; path = "LeoAppTests-Info.plist"; sourceTree = "<group>"; };
+		54F6B10313A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54F6B10513A8E96D001F9F0B /* LeoAppTests-Prefix.pch */ = {isa = PBXFileReference; path = "LeoAppTests-Prefix.pch"; sourceTree = "<group>"; };
+		54F6B10613A8E96D001F9F0B /* LeoAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoAppTests.h; sourceTree = "<group>"; };
+		54F6B10813A8E96D001F9F0B /* LeoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54F6B0D213A8E96C001F9F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B0DA13A8E96C001F9F0B /* UIKit.framework in Frameworks */,
+				54F6B0DC13A8E96C001F9F0B /* Foundation.framework in Frameworks */,
+				54F6B0DE13A8E96C001F9F0B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F6B0F513A8E96D001F9F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B0FA13A8E96D001F9F0B /* UIKit.framework in Frameworks */,
+				54F6B0FB13A8E96D001F9F0B /* Foundation.framework in Frameworks */,
+				54F6B0FC13A8E96D001F9F0B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54F6B0CA13A8E96C001F9F0B = {
+			isa = PBXGroup;
+			children = (
+				54F6B0DF13A8E96C001F9F0B /* LeoApp */,
+				54F6B0FF13A8E96D001F9F0B /* LeoAppTests */,
+				54F6B0D813A8E96C001F9F0B /* Frameworks */,
+				54F6B0D613A8E96C001F9F0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54F6B0D613A8E96C001F9F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B0D513A8E96C001F9F0B /* LeoApp.app */,
+				54F6B0F913A8E96D001F9F0B /* LeoAppTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54F6B0D813A8E96C001F9F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B0D913A8E96C001F9F0B /* UIKit.framework */,
+				54F6B0DB13A8E96C001F9F0B /* Foundation.framework */,
+				54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54F6B0DF13A8E96C001F9F0B /* LeoApp */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B0E813A8E96D001F9F0B /* LeoAppAppDelegate.h */,
+				54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */,
+				54F6B0EB13A8E96D001F9F0B /* MainWindow.xib */,
+				54F6B0EE13A8E96D001F9F0B /* LeoAppViewController.h */,
+				54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */,
+				54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */,
+				54F6B0E013A8E96C001F9F0B /* Supporting Files */,
+			);
+			path = LeoApp;
+			sourceTree = "<group>";
+		};
+		54F6B0E013A8E96C001F9F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B0E113A8E96C001F9F0B /* LeoApp-Info.plist */,
+				54F6B0E213A8E96C001F9F0B /* InfoPlist.strings */,
+				54F6B0E513A8E96C001F9F0B /* LeoApp-Prefix.pch */,
+				54F6B0E613A8E96C001F9F0B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54F6B0FF13A8E96D001F9F0B /* LeoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B10613A8E96D001F9F0B /* LeoAppTests.h */,
+				54F6B10813A8E96D001F9F0B /* LeoAppTests.m */,
+				54F6B10013A8E96D001F9F0B /* Supporting Files */,
+			);
+			path = LeoAppTests;
+			sourceTree = "<group>";
+		};
+		54F6B10013A8E96D001F9F0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54F6B10113A8E96D001F9F0B /* LeoAppTests-Info.plist */,
+				54F6B10213A8E96D001F9F0B /* InfoPlist.strings */,
+				54F6B10513A8E96D001F9F0B /* LeoAppTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54F6B0D413A8E96C001F9F0B /* LeoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F6B10C13A8E96D001F9F0B /* Build configuration list for PBXNativeTarget "LeoApp" */;
+			buildPhases = (
+				54F6B0D113A8E96C001F9F0B /* Sources */,
+				54F6B0D213A8E96C001F9F0B /* Frameworks */,
+				54F6B0D313A8E96C001F9F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeoApp;
+			productName = LeoApp;
+			productReference = 54F6B0D513A8E96C001F9F0B /* LeoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54F6B0F813A8E96D001F9F0B /* LeoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54F6B10F13A8E96D001F9F0B /* Build configuration list for PBXNativeTarget "LeoAppTests" */;
+			buildPhases = (
+				54F6B0F413A8E96D001F9F0B /* Sources */,
+				54F6B0F513A8E96D001F9F0B /* Frameworks */,
+				54F6B0F613A8E96D001F9F0B /* Resources */,
+				54F6B0F713A8E96D001F9F0B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54F6B0FE13A8E96D001F9F0B /* PBXTargetDependency */,
+			);
+			name = LeoAppTests;
+			productName = LeoAppTests;
+			productReference = 54F6B0F913A8E96D001F9F0B /* LeoAppTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54F6B0CC13A8E96C001F9F0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Republic Polytechnic";
+			};
+			buildConfigurationList = 54F6B0CF13A8E96C001F9F0B /* Build configuration list for PBXProject "LeoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54F6B0CA13A8E96C001F9F0B;
+			productRefGroup = 54F6B0D613A8E96C001F9F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54F6B0D413A8E96C001F9F0B /* LeoApp */,
+				54F6B0F813A8E96D001F9F0B /* LeoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54F6B0D313A8E96C001F9F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B0E413A8E96C001F9F0B /* InfoPlist.strings in Resources */,
+				54F6B0ED13A8E96D001F9F0B /* MainWindow.xib in Resources */,
+				54F6B0F313A8E96D001F9F0B /* LeoAppViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F6B0F613A8E96D001F9F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B10413A8E96D001F9F0B /* InfoPlist.strings in Resources */,
+				54F6B10713A8E96D001F9F0B /* LeoAppTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54F6B0F713A8E96D001F9F0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54F6B0D113A8E96C001F9F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B0E713A8E96C001F9F0B /* main.m in Sources */,
+				54F6B0EA13A8E96D001F9F0B /* LeoAppAppDelegate.m in Sources */,
+				54F6B0F013A8E96D001F9F0B /* LeoAppViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54F6B0F413A8E96D001F9F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F6B10913A8E96D001F9F0B /* LeoAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54F6B0FE13A8E96D001F9F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F6B0D413A8E96C001F9F0B /* LeoApp */;
+			targetProxy = 54F6B0FD13A8E96D001F9F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54F6B0E213A8E96C001F9F0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F6B0E313A8E96C001F9F0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54F6B0EB13A8E96D001F9F0B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F6B0EC13A8E96D001F9F0B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F6B0F213A8E96D001F9F0B /* en */,
+			);
+			name = LeoAppViewController.xib;
+			sourceTree = "<group>";
+		};
+		54F6B10213A8E96D001F9F0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54F6B10313A8E96D001F9F0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54F6B10A13A8E96D001F9F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54F6B10B13A8E96D001F9F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		54F6B10D13A8E96D001F9F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
+				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54F6B10E13A8E96D001F9F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
+				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		54F6B11013A8E96D001F9F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeoApp.app/LeoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoAppTests/LeoAppTests-Prefix.pch";
+				INFOPLIST_FILE = "LeoAppTests/LeoAppTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		54F6B11113A8E96D001F9F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeoApp.app/LeoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoAppTests/LeoAppTests-Prefix.pch";
+				INFOPLIST_FILE = "LeoAppTests/LeoAppTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54F6B0CF13A8E96C001F9F0B /* Build configuration list for PBXProject "LeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F6B10A13A8E96D001F9F0B /* Debug */,
+				54F6B10B13A8E96D001F9F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54F6B10C13A8E96D001F9F0B /* Build configuration list for PBXNativeTarget "LeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F6B10D13A8E96D001F9F0B /* Debug */,
+				54F6B10E13A8E96D001F9F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54F6B10F13A8E96D001F9F0B /* Build configuration list for PBXNativeTarget "LeoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F6B11013A8E96D001F9F0B /* Debug */,
+				54F6B11113A8E96D001F9F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54F6B0CC13A8E96C001F9F0B /* Project object */;
+}
