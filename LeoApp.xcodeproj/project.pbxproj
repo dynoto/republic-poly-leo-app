@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5420E7E913ACDB8D00B67BDE /* userSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5420E7E713ACDB8D00B67BDE /* userSettingsController.m */; };
+		5420E7EA13ACDB8D00B67BDE /* userSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5420E7E813ACDB8D00B67BDE /* userSettings.xib */; };
+		5420E7EC13ACEEB700B67BDE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5420E7EB13ACEEB700B67BDE /* iAd.framework */; };
+		5438FCBE13ACD75800429111 /* UtTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5438FCBC13ACD75800429111 /* UtTestController.m */; };
+		5438FCBF13ACD75800429111 /* UtTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5438FCBD13ACD75800429111 /* UtTest.xib */; };
 		545AC17F13A911AE00E7AAA8 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC17913A911AE00E7AAA8 /* CJSONDeserializer.m */; };
 		545AC18013A911AE00E7AAA8 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC17B13A911AE00E7AAA8 /* CJSONScanner.m */; };
 		545AC18113A911AE00E7AAA8 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC17D13A911AE00E7AAA8 /* CJSONSerializer.m */; };
@@ -20,8 +25,8 @@
 		54F6B0E713A8E96C001F9F0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0E613A8E96C001F9F0B /* main.m */; };
 		54F6B0EA13A8E96D001F9F0B /* LeoAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */; };
 		54F6B0ED13A8E96D001F9F0B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0EB13A8E96D001F9F0B /* MainWindow.xib */; };
-		54F6B0F013A8E96D001F9F0B /* LeoAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */; };
-		54F6B0F313A8E96D001F9F0B /* LeoAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */; };
+		54F6B0F013A8E96D001F9F0B /* DailyGradeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B0EF13A8E96D001F9F0B /* DailyGradeController.m */; };
+		54F6B0F313A8E96D001F9F0B /* DailyGrade.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B0F113A8E96D001F9F0B /* DailyGrade.xib */; };
 		54F6B0FA13A8E96D001F9F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0D913A8E96C001F9F0B /* UIKit.framework */; };
 		54F6B0FB13A8E96D001F9F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DB13A8E96C001F9F0B /* Foundation.framework */; };
 		54F6B0FC13A8E96D001F9F0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */; };
@@ -55,6 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5420E7E613ACDB8C00B67BDE /* userSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userSettingsController.h; sourceTree = "<group>"; };
+		5420E7E713ACDB8D00B67BDE /* userSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userSettingsController.m; sourceTree = "<group>"; };
+		5420E7E813ACDB8D00B67BDE /* userSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = userSettings.xib; sourceTree = "<group>"; };
+		5420E7EB13ACEEB700B67BDE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		5438FCBB13ACD75800429111 /* UtTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtTestController.h; sourceTree = "<group>"; };
+		5438FCBC13ACD75800429111 /* UtTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtTestController.m; sourceTree = "<group>"; };
+		5438FCBD13ACD75800429111 /* UtTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UtTest.xib; sourceTree = "<group>"; };
 		545AC17813A911AE00E7AAA8 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
 		545AC17913A911AE00E7AAA8 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
 		545AC17A13A911AE00E7AAA8 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
@@ -79,9 +91,9 @@
 		54F6B0E813A8E96D001F9F0B /* LeoAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoAppAppDelegate.h; sourceTree = "<group>"; };
 		54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoAppAppDelegate.m; sourceTree = "<group>"; };
 		54F6B0EC13A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		54F6B0EE13A8E96D001F9F0B /* LeoAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoAppViewController.h; sourceTree = "<group>"; };
-		54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoAppViewController.m; sourceTree = "<group>"; };
-		54F6B0F213A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeoAppViewController.xib; sourceTree = "<group>"; };
+		54F6B0EE13A8E96D001F9F0B /* DailyGradeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DailyGradeController.h; sourceTree = "<group>"; };
+		54F6B0EF13A8E96D001F9F0B /* DailyGradeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyGradeController.m; sourceTree = "<group>"; };
+		54F6B0F213A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DailyGrade.xib; sourceTree = "<group>"; };
 		54F6B0F913A8E96D001F9F0B /* LeoAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6B10113A8E96D001F9F0B /* LeoAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeoAppTests-Info.plist"; sourceTree = "<group>"; };
 		54F6B10313A8E96D001F9F0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5420E7EC13ACEEB700B67BDE /* iAd.framework in Frameworks */,
 				54F6B15213A8FF5B001F9F0B /* MobileCoreServices.framework in Frameworks */,
 				54F6B15013A8FB8E001F9F0B /* libz.1.2.3.dylib in Frameworks */,
 				54F6B14E13A8FB67001F9F0B /* SystemConfiguration.framework in Frameworks */,
@@ -173,6 +186,7 @@
 		54F6B0CA13A8E96C001F9F0B = {
 			isa = PBXGroup;
 			children = (
+				5420E7EB13ACEEB700B67BDE /* iAd.framework */,
 				54F6B0DF13A8E96C001F9F0B /* LeoApp */,
 				54F6B0FF13A8E96D001F9F0B /* LeoAppTests */,
 				54F6B0D813A8E96C001F9F0B /* Frameworks */,
@@ -214,9 +228,15 @@
 				54F6B0E813A8E96D001F9F0B /* LeoAppAppDelegate.h */,
 				54F6B0E913A8E96D001F9F0B /* LeoAppAppDelegate.m */,
 				54F6B0EB13A8E96D001F9F0B /* MainWindow.xib */,
-				54F6B0EE13A8E96D001F9F0B /* LeoAppViewController.h */,
-				54F6B0EF13A8E96D001F9F0B /* LeoAppViewController.m */,
-				54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */,
+				5438FCBB13ACD75800429111 /* UtTestController.h */,
+				5438FCBC13ACD75800429111 /* UtTestController.m */,
+				5438FCBD13ACD75800429111 /* UtTest.xib */,
+				54F6B0EE13A8E96D001F9F0B /* DailyGradeController.h */,
+				54F6B0EF13A8E96D001F9F0B /* DailyGradeController.m */,
+				54F6B0F113A8E96D001F9F0B /* DailyGrade.xib */,
+				5420E7E613ACDB8C00B67BDE /* userSettingsController.h */,
+				5420E7E713ACDB8D00B67BDE /* userSettingsController.m */,
+				5420E7E813ACDB8D00B67BDE /* userSettings.xib */,
 				54F6B0E013A8E96C001F9F0B /* Supporting Files */,
 			);
 			path = LeoApp;
@@ -379,8 +399,10 @@
 			files = (
 				54F6B0E413A8E96C001F9F0B /* InfoPlist.strings in Resources */,
 				54F6B0ED13A8E96D001F9F0B /* MainWindow.xib in Resources */,
-				54F6B0F313A8E96D001F9F0B /* LeoAppViewController.xib in Resources */,
+				54F6B0F313A8E96D001F9F0B /* DailyGrade.xib in Resources */,
 				54F6B14913A8F49D001F9F0B /* README-GHUnit in Resources */,
+				5438FCBF13ACD75800429111 /* UtTest.xib in Resources */,
+				5420E7EA13ACDB8D00B67BDE /* userSettings.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +440,7 @@
 			files = (
 				54F6B0E713A8E96C001F9F0B /* main.m in Sources */,
 				54F6B0EA13A8E96D001F9F0B /* LeoAppAppDelegate.m in Sources */,
-				54F6B0F013A8E96D001F9F0B /* LeoAppViewController.m in Sources */,
+				54F6B0F013A8E96D001F9F0B /* DailyGradeController.m in Sources */,
 				54F6B13B13A8F40C001F9F0B /* ASIAuthenticationDialog.m in Sources */,
 				54F6B13C13A8F40C001F9F0B /* ASIDataCompressor.m in Sources */,
 				54F6B13D13A8F40C001F9F0B /* ASIDataDecompressor.m in Sources */,
@@ -434,6 +456,8 @@
 				545AC18513A9127E00E7AAA8 /* CDataScanner.m in Sources */,
 				545AC18B13A9128C00E7AAA8 /* CDataScanner_Extensions.m in Sources */,
 				545AC18C13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m in Sources */,
+				5438FCBE13ACD75800429111 /* UtTestController.m in Sources */,
+				5420E7E913ACDB8D00B67BDE /* userSettingsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,12 +496,12 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		54F6B0F113A8E96D001F9F0B /* LeoAppViewController.xib */ = {
+		54F6B0F113A8E96D001F9F0B /* DailyGrade.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				54F6B0F213A8E96D001F9F0B /* en */,
 			);
-			name = LeoAppViewController.xib;
+			name = DailyGrade.xib;
 			sourceTree = "<group>";
 		};
 		54F6B10213A8E96D001F9F0B /* InfoPlist.strings */ = {
