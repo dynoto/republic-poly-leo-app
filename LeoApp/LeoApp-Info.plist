@@ -10,8 +10,15 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>logo-SMALL.png</string>
+		<string>logo-SMALL.png</string>
+		<string>logo-BIG.png</string>
+		<string>logo-BIG.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
-	<string>ddante.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>leoappbundle</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -31,8 +38,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

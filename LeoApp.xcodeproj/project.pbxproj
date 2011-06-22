@@ -18,6 +18,8 @@
 		545AC18513A9127E00E7AAA8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC18413A9127E00E7AAA8 /* CDataScanner.m */; };
 		545AC18B13A9128C00E7AAA8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC18813A9128C00E7AAA8 /* CDataScanner_Extensions.m */; };
 		545AC18C13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC18A13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m */; };
+		5497E0E013B06A0000A4CA2C /* logo-BIG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5497E0DF13B06A0000A4CA2C /* logo-BIG.png */; };
+		54F2328113B046E4005B07B9 /* logo-SMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2328013B046E4005B07B9 /* logo-SMALL.png */; };
 		54F6B0DA13A8E96C001F9F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0D913A8E96C001F9F0B /* UIKit.framework */; };
 		54F6B0DC13A8E96C001F9F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DB13A8E96C001F9F0B /* Foundation.framework */; };
 		54F6B0DE13A8E96C001F9F0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */; };
@@ -80,6 +82,8 @@
 		545AC18813A9128C00E7AAA8 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
 		545AC18913A9128C00E7AAA8 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		545AC18A13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		5497E0DF13B06A0000A4CA2C /* logo-BIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-BIG.png"; sourceTree = "<group>"; };
+		54F2328013B046E4005B07B9 /* logo-SMALL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-SMALL.png"; sourceTree = "<group>"; };
 		54F6B0D513A8E96C001F9F0B /* LeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6B0D913A8E96C001F9F0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F6B0DB13A8E96C001F9F0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -186,6 +190,8 @@
 		54F6B0CA13A8E96C001F9F0B = {
 			isa = PBXGroup;
 			children = (
+				5497E0DF13B06A0000A4CA2C /* logo-BIG.png */,
+				54F2328013B046E4005B07B9 /* logo-SMALL.png */,
 				5420E7EB13ACEEB700B67BDE /* iAd.framework */,
 				54F6B0DF13A8E96C001F9F0B /* LeoApp */,
 				54F6B0FF13A8E96D001F9F0B /* LeoAppTests */,
@@ -403,6 +409,8 @@
 				54F6B14913A8F49D001F9F0B /* README-GHUnit in Resources */,
 				5438FCBF13ACD75800429111 /* UtTest.xib in Resources */,
 				5420E7EA13ACDB8D00B67BDE /* userSettings.xib in Resources */,
+				54F2328113B046E4005B07B9 /* logo-SMALL.png in Resources */,
+				5497E0E013B06A0000A4CA2C /* logo-BIG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -527,7 +536,9 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -536,13 +547,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -551,12 +565,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
 				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -565,11 +582,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
 				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
