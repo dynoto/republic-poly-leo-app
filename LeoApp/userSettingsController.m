@@ -10,6 +10,7 @@
 
 
 @implementation userSettingsController
+@synthesize username,password,saveButton,bannerIsVisible;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -20,8 +21,21 @@
     return self;
 }
 
+- (IBAction)saveCredentials:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:username.text forKey:@"username"];
+    [defaults setObject:password.text forKey:@"password"];
+    [username resignFirstResponder];
+    [password resignFirstResponder];
+    [defaults release];
+}
+
 - (void)dealloc
 {
+    [username release];
+    [password release];
+    [saveButton release];
     [super dealloc];
 }
 
@@ -37,8 +51,44 @@
 
 - (void)viewDidLoad
 {
+    bannerView = [[ADBannerView alloc]initWithFrame:CGRectZero];
+    bannerView.frame = CGRectOffset(bannerView.frame, 0, -5);
+    bannerView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
+    bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    [self.view addSubview:bannerView];
+    bannerView.delegate=self;
+    self.bannerIsVisible=NO;
+    
+    [bannerView release];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    if (!self.bannerIsVisible) {
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        // banner is invisible now and moved out of the screen on 50 px
+        banner.frame = CGRectOffset(banner.frame, 0, 50);
+        [UIView commitAnimations];
+        self.bannerIsVisible = YES;
+
+    }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    if (!self.bannerIsVisible) {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        banner.frame = CGRectOffset(banner.frame, 0, -50);
+        [UIView commitAnimations];
+        self.bannerIsVisible = NO;
+    }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 - (void)viewDidUnload

@@ -7,9 +7,14 @@
 //
 
 #import "UtTestController.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "CJSONDeserializer.h"
 
 
 @implementation UtTestController
+@synthesize mytableView;
+@synthesize refreshButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -18,6 +23,54 @@
         // Custom initialization
     }
     return self;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 10;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([defaults boolForKey:@"error"]){
+        return @"";
+    }
+    else{
+        NSArray *classes = [defaults arrayForKey:@"ut"];
+        NSString *dateStr = [[classes objectAtIndex:section]objectAtIndex:0];
+        return dateStr;
+        [classes release];
+        [dateStr release];
+    }
+    [defaults release];
+}   
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *MyIdentifier = @"MyIdentifier";
+    UITableViewCell *cell = [mytableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    if(cell == nil){
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MyIdentifier] autorelease];
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"error"] == TRUE) {
+        cell.textLabel.text = @"";
+    }
+    else{
+        NSArray *classes = [defaults objectForKey:@"ut"];
+        cell.textLabel.text = [[classes objectAtIndex:indexPath.section]objectAtIndex:indexPath.row+1];
+    }
+    return cell;    
+    [MyIdentifier release];
+    [defaults release];
+    [cell release];
+    
 }
 
 - (void)dealloc
@@ -31,6 +84,42 @@
     [super didReceiveMemoryWarning];
     
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (IBAction)refreshTimetable:(id)sender
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *username = [defaults stringForKey:@"username"];
+    NSString *password = [defaults stringForKey:@"password"];
+    NSURL *url = [NSURL URLWithString:@"http://www.ddante.me/leo.php"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:username forKey:@"user"];
+    [request setPostValue:password forKey:@"pass"];
+    [request setPostValue:@"ut" forKey:@"mode"];
+    [request setDelegate:self];
+    [request setRequestMethod:@"POST"];
+    [request startAsynchronous];
+    
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSString *jsonValue = [request responseString];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![jsonValue isEqualToString:@"invalid"]) {
+        NSData *array = [jsonValue dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray *result = [[CJSONDeserializer deserializer]deserializeAsArray:array error:NULL];
+        [defaults setObject:result forKey:@"ut"];
+        [defaults setBool:FALSE forKey:@"error"];
+        [mytableView reloadData];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Error!" message:@"Data retrieve error! check internet connection and/or credentials!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+        [defaults setBool:TRUE forKey:@"error"];
+    }
 }
 
 #pragma mark - View lifecycle

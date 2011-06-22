@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LeoAppViewController : UIViewController {
-    
-}
 
+@interface DailyGradeController : UIViewController{
+    
+    IBOutlet UITableView *mytableView;
+    IBOutlet UIBarButtonItem *refreshButton;
+}
+- (IBAction)refreshTimetable:(id)sender;
+
+@property (nonatomic,retain) UIBarButtonItem *refreshButton;
+@property (nonatomic,retain) UITableView *mytableView;
 @end
