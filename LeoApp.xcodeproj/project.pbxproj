@@ -19,6 +19,9 @@
 		545AC18B13A9128C00E7AAA8 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC18813A9128C00E7AAA8 /* CDataScanner_Extensions.m */; };
 		545AC18C13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545AC18A13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m */; };
 		5497E0E013B06A0000A4CA2C /* logo-BIG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5497E0DF13B06A0000A4CA2C /* logo-BIG.png */; };
+		54C6755E13B3835000AF0BB4 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6755913B3835000AF0BB4 /* ASIDataCompressor.m */; };
+		54C6755F13B3835000AF0BB4 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6755B13B3835000AF0BB4 /* ASIDataDecompressor.m */; };
+		54C6756013B3835000AF0BB4 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C6755D13B3835000AF0BB4 /* ASIDownloadCache.m */; };
 		54F2328113B046E4005B07B9 /* logo-SMALL.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F2328013B046E4005B07B9 /* logo-SMALL.png */; };
 		54F6B0DA13A8E96C001F9F0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0D913A8E96C001F9F0B /* UIKit.framework */; };
 		54F6B0DC13A8E96C001F9F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6B0DB13A8E96C001F9F0B /* Foundation.framework */; };
@@ -36,9 +39,6 @@
 		54F6B10713A8E96D001F9F0B /* LeoAppTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 54F6B10613A8E96D001F9F0B /* LeoAppTests.h */; };
 		54F6B10913A8E96D001F9F0B /* LeoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B10813A8E96D001F9F0B /* LeoAppTests.m */; };
 		54F6B13B13A8F40C001F9F0B /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B12813A8F40C001F9F0B /* ASIAuthenticationDialog.m */; };
-		54F6B13C13A8F40C001F9F0B /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B12B13A8F40C001F9F0B /* ASIDataCompressor.m */; };
-		54F6B13D13A8F40C001F9F0B /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B12D13A8F40C001F9F0B /* ASIDataDecompressor.m */; };
-		54F6B13E13A8F40C001F9F0B /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B12F13A8F40C001F9F0B /* ASIDownloadCache.m */; };
 		54F6B13F13A8F40C001F9F0B /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B13113A8F40C001F9F0B /* ASIFormDataRequest.m */; };
 		54F6B14013A8F40C001F9F0B /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B13313A8F40C001F9F0B /* ASIHTTPRequest.m */; };
 		54F6B14113A8F40C001F9F0B /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6B13713A8F40C001F9F0B /* ASIInputStream.m */; };
@@ -69,6 +69,7 @@
 		5438FCBB13ACD75800429111 /* UtTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtTestController.h; sourceTree = "<group>"; };
 		5438FCBC13ACD75800429111 /* UtTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtTestController.m; sourceTree = "<group>"; };
 		5438FCBD13ACD75800429111 /* UtTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UtTest.xib; sourceTree = "<group>"; };
+		54582B0713BB321C00F5A93F /* LeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545AC17813A911AE00E7AAA8 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
 		545AC17913A911AE00E7AAA8 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
 		545AC17A13A911AE00E7AAA8 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
@@ -83,8 +84,13 @@
 		545AC18913A9128C00E7AAA8 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		545AC18A13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		5497E0DF13B06A0000A4CA2C /* logo-BIG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-BIG.png"; sourceTree = "<group>"; };
+		54C6755813B3834F00AF0BB4 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		54C6755913B3835000AF0BB4 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		54C6755A13B3835000AF0BB4 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		54C6755B13B3835000AF0BB4 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		54C6755C13B3835000AF0BB4 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		54C6755D13B3835000AF0BB4 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
 		54F2328013B046E4005B07B9 /* logo-SMALL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-SMALL.png"; sourceTree = "<group>"; };
-		54F6B0D513A8E96C001F9F0B /* LeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6B0D913A8E96C001F9F0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54F6B0DB13A8E96C001F9F0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54F6B0DD13A8E96C001F9F0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,12 +113,6 @@
 		54F6B12713A8F40C001F9F0B /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		54F6B12813A8F40C001F9F0B /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		54F6B12913A8F40C001F9F0B /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		54F6B12A13A8F40C001F9F0B /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		54F6B12B13A8F40C001F9F0B /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		54F6B12C13A8F40C001F9F0B /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		54F6B12D13A8F40C001F9F0B /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		54F6B12E13A8F40C001F9F0B /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		54F6B12F13A8F40C001F9F0B /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
 		54F6B13013A8F40C001F9F0B /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
 		54F6B13113A8F40C001F9F0B /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
 		54F6B13213A8F40C001F9F0B /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
@@ -203,8 +203,8 @@
 		54F6B0D613A8E96C001F9F0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54F6B0D513A8E96C001F9F0B /* LeoApp.app */,
 				54F6B0F913A8E96D001F9F0B /* LeoAppTests.octest */,
+				54582B0713BB321C00F5A93F /* LeoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,18 +286,18 @@
 				54F6B12713A8F40C001F9F0B /* ASIAuthenticationDialog.h */,
 				54F6B12813A8F40C001F9F0B /* ASIAuthenticationDialog.m */,
 				54F6B12913A8F40C001F9F0B /* ASICacheDelegate.h */,
-				54F6B12A13A8F40C001F9F0B /* ASIDataCompressor.h */,
-				54F6B12B13A8F40C001F9F0B /* ASIDataCompressor.m */,
-				54F6B12C13A8F40C001F9F0B /* ASIDataDecompressor.h */,
-				54F6B12D13A8F40C001F9F0B /* ASIDataDecompressor.m */,
-				54F6B12E13A8F40C001F9F0B /* ASIDownloadCache.h */,
-				54F6B12F13A8F40C001F9F0B /* ASIDownloadCache.m */,
 				54F6B13013A8F40C001F9F0B /* ASIFormDataRequest.h */,
 				54F6B13113A8F40C001F9F0B /* ASIFormDataRequest.m */,
 				54F6B13213A8F40C001F9F0B /* ASIHTTPRequest.h */,
 				54F6B13313A8F40C001F9F0B /* ASIHTTPRequest.m */,
 				54F6B13413A8F40C001F9F0B /* ASIHTTPRequestConfig.h */,
 				54F6B13513A8F40C001F9F0B /* ASIHTTPRequestDelegate.h */,
+				54C6755813B3834F00AF0BB4 /* ASIDataCompressor.h */,
+				54C6755913B3835000AF0BB4 /* ASIDataCompressor.m */,
+				54C6755A13B3835000AF0BB4 /* ASIDataDecompressor.h */,
+				54C6755B13B3835000AF0BB4 /* ASIDataDecompressor.m */,
+				54C6755C13B3835000AF0BB4 /* ASIDownloadCache.h */,
+				54C6755D13B3835000AF0BB4 /* ASIDownloadCache.m */,
 				54F6B13613A8F40C001F9F0B /* ASIInputStream.h */,
 				54F6B13713A8F40C001F9F0B /* ASIInputStream.m */,
 				54F6B13813A8F40C001F9F0B /* ASINetworkQueue.h */,
@@ -350,7 +350,7 @@
 			);
 			name = LeoApp;
 			productName = LeoApp;
-			productReference = 54F6B0D513A8E96C001F9F0B /* LeoApp.app */;
+			productReference = 54582B0713BB321C00F5A93F /* LeoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		54F6B0F813A8E96D001F9F0B /* LeoAppTests */ = {
@@ -450,9 +450,6 @@
 				54F6B0EA13A8E96D001F9F0B /* LeoAppAppDelegate.m in Sources */,
 				54F6B0F013A8E96D001F9F0B /* DailyGradeController.m in Sources */,
 				54F6B13B13A8F40C001F9F0B /* ASIAuthenticationDialog.m in Sources */,
-				54F6B13C13A8F40C001F9F0B /* ASIDataCompressor.m in Sources */,
-				54F6B13D13A8F40C001F9F0B /* ASIDataDecompressor.m in Sources */,
-				54F6B13E13A8F40C001F9F0B /* ASIDownloadCache.m in Sources */,
 				54F6B13F13A8F40C001F9F0B /* ASIFormDataRequest.m in Sources */,
 				54F6B14013A8F40C001F9F0B /* ASIHTTPRequest.m in Sources */,
 				54F6B14113A8F40C001F9F0B /* ASIInputStream.m in Sources */,
@@ -466,6 +463,9 @@
 				545AC18C13A9128C00E7AAA8 /* NSDictionary_JSONExtensions.m in Sources */,
 				5438FCBE13ACD75800429111 /* UtTestController.m in Sources */,
 				5420E7E913ACDB8D00B67BDE /* userSettingsController.m in Sources */,
+				54C6755E13B3835000AF0BB4 /* ASIDataCompressor.m in Sources */,
+				54C6755F13B3835000AF0BB4 /* ASIDataDecompressor.m in Sources */,
+				54C6756013B3835000AF0BB4 /* ASIDownloadCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,12 +523,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54582B2913BB33C700F5A93F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		54582B2A13BB33C700F5A93F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
+				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		54582B2B13BB33C700F5A93F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeoApp.app/LeoApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeoAppTests/LeoAppTests-Prefix.pch";
+				INFOPLIST_FILE = "LeoAppTests/LeoAppTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
 		54F6B10A13A8E96D001F9F0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: David Tjokroaminoto";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -538,7 +595,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F736689-97E7-4B4B-A793-E145E4988491";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -548,7 +605,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -566,7 +623,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				COPY_PHASE_STRIP = NO;
+				COPY_PHASE_STRIP = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
@@ -574,6 +631,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -583,7 +641,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeoApp/LeoApp-Prefix.pch";
 				INFOPLIST_FILE = "LeoApp/LeoApp-Info.plist";
@@ -647,6 +705,7 @@
 			buildConfigurations = (
 				54F6B10A13A8E96D001F9F0B /* Debug */,
 				54F6B10B13A8E96D001F9F0B /* Release */,
+				54582B2913BB33C700F5A93F /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -656,6 +715,7 @@
 			buildConfigurations = (
 				54F6B10D13A8E96D001F9F0B /* Debug */,
 				54F6B10E13A8E96D001F9F0B /* Release */,
+				54582B2A13BB33C700F5A93F /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -665,6 +725,7 @@
 			buildConfigurations = (
 				54F6B11013A8E96D001F9F0B /* Debug */,
 				54F6B11113A8E96D001F9F0B /* Release */,
+				54582B2B13BB33C700F5A93F /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

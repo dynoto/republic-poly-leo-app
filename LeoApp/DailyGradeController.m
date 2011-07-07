@@ -17,7 +17,9 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 7;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int numsecs = [[defaults objectForKey:@"classes"] count];
+    return numsecs;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -36,7 +38,6 @@
         return [[classes objectAtIndex:section]objectAtIndex:0];
         [classes release];
     }
-    [defaults release];
 }   
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -56,7 +57,6 @@
     }
     return cell;    
     [MyIdentifier release];
-    [defaults release];
     [cell release];
     
 }

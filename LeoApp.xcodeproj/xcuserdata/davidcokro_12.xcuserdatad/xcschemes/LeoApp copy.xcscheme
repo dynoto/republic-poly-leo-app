@@ -13,9 +13,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5497E0E413B06C1D00A4CA2C"
+               BlueprintIdentifier = "54582ADA13BB30A500F5A93F"
                BuildableName = "LeoApp copy.app"
-               BlueprintName = "LeoApp copy"
+               BlueprintName = "iPhone Distribution"
                ReferencedContainer = "container:LeoApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,9 +40,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5497E0E413B06C1D00A4CA2C"
+            BlueprintIdentifier = "54582ADA13BB30A500F5A93F"
             BuildableName = "LeoApp copy.app"
-            BlueprintName = "LeoApp copy"
+            BlueprintName = "iPhone Distribution"
             ReferencedContainer = "container:LeoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -59,9 +59,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5497E0E413B06C1D00A4CA2C"
+            BlueprintIdentifier = "54582ADA13BB30A500F5A93F"
             BuildableName = "LeoApp copy.app"
-            BlueprintName = "LeoApp copy"
+            BlueprintName = "iPhone Distribution"
             ReferencedContainer = "container:LeoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

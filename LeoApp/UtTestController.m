@@ -27,7 +27,9 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int numsecs = [[defaults objectForKey:@"ut"] count];
+    return numsecs;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

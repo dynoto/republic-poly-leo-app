@@ -28,7 +28,6 @@
     [defaults setObject:password.text forKey:@"password"];
     [username resignFirstResponder];
     [password resignFirstResponder];
-    [defaults release];
 }
 
 - (void)dealloc
